@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Plan Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="calculator">
+            <div class="sliderblock">
+                <div class="planlist">
+                    <div class="free active">Free <div class="line yellow"></div> </div>
+                    <div class="starter">Starter <div class="line red"></div></div>
+                    <div class="pro">Pro <div class="line purple"></div></div>
+                    <div class="enterprise">Enterprise <div class="line blue"></div></div>
+                </div>
+
+                <div class="dots">
+                    <div>
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#191B1C"/>
+                            </svg>
+                            
+                        <span class="listItem">The pricing is according to the number of monthly invocations.</span></div>
+                    <div>
+                        
+                        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#191B1C"/>
+                            </svg>
+                           <span class="listItem">
+                            Invocation = <a href="#" style="color: #03D6F9;">Scan Trigger</a>
+                           </span></div>
+                </div>
+
+                <div class="slider">
+                    <p>Select the number of invocations per month:</p>
+                    <div class="range-wrap">
+                        <div class="dot zero">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#3D3D3D"/>
+                                </svg>
+                            <p>0</p>                                
+                        </div>
+                        <div class="dot dvesta">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#3D3D3D"/>
+                                </svg>
+                            <p>200</p>                                
+                        </div>
+                        <div class="dot petsto">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#3D3D3D"/>
+                                </svg>
+                            <p>500</p>                                
+                        </div>
+                        <div class="dot trisoma">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="#3D3D3D"/>
+                                </svg>
+                            <p>3000</p>                                
+                        </div>
+                        <div class="dot unlimited">
+                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="5" cy="5" rx="5" ry="5" transform="rotate(90 5 5)" fill="none"/>
+                                </svg>
+                            <p style="font-size: 30px; color: #AFAFAF;">∞</p>                                
+                        </div>
+                        <input class="range" value="1" type="range" min="0" max="4000" step="100">
+                        <output class="bubble">
+                            <div class="arrowdown"></div>
+                        </output>
+                    </div>
+                </div>
+            </div>
+            <div class="planblock">
+                <div class="plan">
+                    <h3 class="plantitle">Free</h3>
+                    <h3 class="planprice">
+                        <span class="planpricejs">$0/month</span> <span class="extraMoney"></span>
+                    </h3>
+                    <h3 class="billed">
+                        Billed monthly
+                    </h3>
+
+                </div>
+                <div class="planinfo">
+                    <div class="infoline">
+                        <p class="valueName">Invocations</p>
+                        <p id="invocations" class="value">200 / month</p>
+                    </div>
+                    <div class="infoline">
+                        <p class="valueName">Developers</p>
+                        <p id="developers" class="value">Unlimited users</p>
+                    </div>
+                    <div class="infoline">
+                        <p class="valueName">Support</p>
+                        <p id="support" class="value">Community</p>
+                    </div>
+                    <div class="infoline ">
+                        <p class="valueName">Additional</p>
+                        <p id="additional" class="value">-</p>
+                    </div>
+               
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
